@@ -12,5 +12,8 @@
     "async/await"
   ],
   "author": "Francisco Lopez <franlopbri@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
