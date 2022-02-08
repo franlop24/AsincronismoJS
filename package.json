@@ -7,7 +7,9 @@
     "callback": "node src/callback/index.js",
     "callback:api": "node src/callback/rickandmorty.js",
     "promise": "node src/promise/index.js",
-    "promise:api": "node src/promise/rickandmorty.js"
+    "promise:api": "node src/promise/rickandmorty.js",
+    "async": "node src/async/index.js",
+    "async:api": "node src/async/rickandmorty.js"
   },
   "keywords": [
     "callbacks",
