@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "callback": "node src/callback/index.js",
-    "callback:api": "node src/callback/rickandmorti.js"
+    "callback:api": "node src/callback/rickandmorti.js",
+    "promise": "node src/promise/index.js"
   },
   "keywords": [
     "callbacks",
