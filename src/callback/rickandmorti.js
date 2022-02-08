@@ -1,4 +1,5 @@
 let XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
+const urlBase = "https://rickandmortyapi.com/api/character/";
 
 // readyState 	Holds the status of the XMLHttpRequest.
             // 0: request not initialized
@@ -26,3 +27,16 @@ function fetchData(urlAPI, callback){
     }
     xhttp.send();
 }
+
+fetchData(urlBase, function(error1, data1){
+    if(error1) return console.error(error1);
+    fetchData(urlBase + data1.results[0].id, function (error2, data2){
+        if(error2) return console.error(error2);
+        fetchData(data2.origin.url, function(error3, data3){
+            if(error3) return console.error(error3);
+            console.log(data1.info.count);
+            console.log(data2.name);
+            console.log(data3.dimension);
+        });
+    });
+});
